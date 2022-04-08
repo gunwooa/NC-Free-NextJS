@@ -1,13 +1,12 @@
 import type { AppProps } from "next/app";
-import NavBar from "../components/NavBar";
+import Layout from "../components/Layout";
 import "../styles/globals.css";
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
   return (
-    <>
-      <NavBar />
+    <Layout>
       <Component {...pageProps} />
-    </>
+    </Layout>
   );
 };
 
